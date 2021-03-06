@@ -17,6 +17,7 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 rm -rf package/lean/luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+cp -r luci-theme-argon package/lean
 git clone https://github.com/garypang13/luci-app-eqos
 cp -r luci-app-eqos package/lean
