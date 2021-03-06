@@ -66,10 +66,6 @@ jobs:
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
         chmod +x $DIY_P1_SH
         cd openwrt
-        rm -rf package/lean/luci-theme-argon
-        git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean
-        git clone https://github.com/garypang13/luci-app-eqos
-        cp -r luci-app-eqos package/lean
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: Update feeds
