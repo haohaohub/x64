@@ -21,8 +21,9 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 cp -r luci-theme-argon package/lean
 git clone https://github.com/garypang13/luci-app-eqos
 cp -r luci-app-eqos package/lean
-svn co https://github.com/Lienol/openwrt-luci/branches/18.06/themes
-cp -r themes/luci-theme-argon-dark-mod package/lean
-cp -r themes/luci-theme-argon-light-mod package/lean
-cp -r themes/luci-theme-bootstrap-mod package/lean
-cp -r themes/luci-theme-darkmatter package/lean
+# svn co https://github.com/Lienol/openwrt-luci/branches/18.06/themes
+svn co https://github.com/Lienol/openwrt-luci/trunk
+cp -r trunk/themes/luci-theme-argon-dark-mod package/lean
+cp -r trunk/themes/luci-theme-argon-light-mod package/lean
+cp -r trunk/themes/luci-theme-bootstrap-mod package/lean
+cp -r trunk/themes/luci-theme-darkmatter package/lean
