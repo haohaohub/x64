@@ -22,6 +22,7 @@ git config core.sparsecheckout true
 echo "luci-app-openclash" >> .git/info/sparse-checkout
 git pull origin master
 git branch --set-upstream-to=origin/master master
+cd -
 
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
